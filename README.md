@@ -1,8 +1,14 @@
-# Unity Animation Samples
-Unity Animation Samples using KudanAR
+# Unity-XLsoft-Catalog
 
-In order for this sample project to work, you will need to download the KudanAR Unity plugin from the [Kudan website](https://www.kudan.eu/download/). Import the plugin into the project, open one of the "Animation" scenes and you should be good to go!
+This sample application uses Kudan AR and Unity 2018. The application uses the XLsoft 2019 Catalog as a marker to showcase products featured at XLsoft.
 
-If you have any feedback about our SDK or provided sample source code, please get in touch with us at [our support site](https://www.kudan.eu/support/).
+Long tap the XLsoft logo to find more information on the application.
 
-Thanks!
+## Instructions
+
+1. Clone the repository
+2. Load onto Unity 2018.4.5f1
+3. Build and Run on Android/iOS device
+4. If running on iOS: set `Enable Bitcode: OFF` on XCode
+
+The XLsoft Catalog can be found [here](https://www.xlsoft.com/jp/services/catalog.html?v=2019.2).
