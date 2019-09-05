@@ -198,6 +198,12 @@ namespace Kudan.AR
                             case "P8-arm":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/arm/index.html");
                                 break;
+                            case "P8-cache":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/intel/cas/index.html");
+                                break;
+                            case "P8-intel":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/intel/dcm/index.html");
+                                break;
                             case "P9":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/windriver/index.html");
                                 break;
@@ -219,6 +225,24 @@ namespace Kudan.AR
                             case "P14-photomodeler":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/photomodeler/index.html");
                                 break;
+                            case "P14-bingmaps":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/bing_maps/index.html");
+                                break;
+                            case "P14-pcdoctor":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/pc_doctor/index.html");
+                                break;
+                            case "P15-axure":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/axure/index.html");
+                                break;
+                            case "P15-justinmind":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/justinmind/index.html");
+                                break;
+                            case "P15-XMLSpy":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/altova/index.html");
+                                break;
+                            case "P15-sourceinsight":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/sourceinsight/index.html");
+                                break;
                             case "P16-jprofiler":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/ejtechnologies/index.html");
                                 break;
@@ -227,6 +251,12 @@ namespace Kudan.AR
                                 break;
                             case "P17-orpalis":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/orpalis/index.html");
+                                break;
+                            case "P17-itext":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/itext/index.html");
+                                break;
+                            case "P17-vicuesoft":
+                                Application.OpenURL("https://www.xlsoft.com/jp/products/vicuesoft/index.html");
                                 break;
                             case "P18-arction":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/arction/index.html");
@@ -252,8 +282,6 @@ namespace Kudan.AR
                             case "P24":
                                 Application.OpenURL("https://www.xlsoft.com/jp/products/smartbear/index.html");
                                 break;
-
-
                         }
 
                     }

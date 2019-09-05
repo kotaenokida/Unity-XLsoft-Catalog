@@ -1,64 +1,37 @@
 fileFormatVersion: 2
-guid: 4c2e46a4740c85342ab23760c96ddd00
+guid: f4f9cbea2f7e749cbbd2a35270429003
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: group_0_16448250
-    100002: group_0_16777215
-    100004: group_0_2829873
-    100006: //RootNode
+    100002: group_0_2829873
+    100004: //RootNode
     400000: group_0_16448250
-    400002: group_0_16777215
-    400004: group_0_2829873
-    400006: //RootNode
-    2100000: color_16448250
-    2100002: color_16777215
-    2100004: color_2829873
+    400002: group_0_2829873
+    400004: //RootNode
+    2100000: group_0_16448250Mat
+    2100002: group_0_2829873Mat
     2300000: group_0_16448250
-    2300002: group_0_16777215
-    2300004: group_0_2829873
+    2300002: group_0_2829873
     3300000: group_0_16448250
-    3300002: group_0_16777215
-    3300004: group_0_2829873
+    3300002: group_0_2829873
     4300000: group_0_16448250
-    4300002: group_0_16777215
-    4300004: group_0_2829873
-    11100000: //RootNode
+    4300002: group_0_2829873
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: color_16448250
-    second: {fileID: 2100000, guid: 319f13e339aa23c48968b0786feb1304, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: color_16777215
-    second: {fileID: 2100000, guid: 023503b63d39be148943c55825a694c5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: color_2829873
-    second: {fileID: 2100000, guid: ba00831b8aa472c4aa1548ad22ca5d5e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: group_0_16448250Mat
-    second: {fileID: 2100000, guid: b37cd165711c2094abcda77243083f04, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: group_0_16777215Mat
-    second: {fileID: 2100000, guid: dda8fa7c8fc0bca43a66a04047dfebbd, type: 2}
+    second: {fileID: 2100000, guid: 480bf44ba9f934aae91ebda304bd0518, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: group_0_2829873Mat
-    second: {fileID: 2100000, guid: 1ce614e675d6cac47a5ea45e2b4b7a33, type: 2}
+    second: {fileID: 2100000, guid: 20f0d6710c37c4799b33c4d536c49eeb, type: 2}
   materials:
     importMaterials: 1
-    materialName: 2
+    materialName: 1
     materialSearch: 1
     materialLocation: 0
   animations:
@@ -89,6 +62,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -106,11 +80,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -125,12 +104,11 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
