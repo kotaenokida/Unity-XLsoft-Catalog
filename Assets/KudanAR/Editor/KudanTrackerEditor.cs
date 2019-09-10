@@ -1,64 +1,80 @@
-﻿using UnityEditor;
+﻿using System.Collections;
+using UnityEditor;
 using UnityEngine;
-using System.Collections;
 
 namespace Kudan.AR
 {
-	[CustomEditor(typeof(KudanTracker))]
-	/// <summary>
-	/// Script that creates a custom inspector entry for the Kudan Tracker. 
-	/// </summary>
-	public class KudanTrackerEditor : Editor
-	{
-		//private KudanTracker _target;
+    [CustomEditor(typeof(KudanTracker))]
+    /// <summary>
+    /// Script that creates a custom inspector entry for the Kudan Tracker. 
+    /// </summary>
+    public class KudanTrackerEditor : Editor
+    {
+        //private KudanTracker _target;
 
-		void Awake()
-		{
-			//_target = (KudanTracker)target;
-		}
+        void Awake()
+        {
+            //_target = (KudanTracker)target;
+        }
 
-		public override void OnInspectorGUI()
-		{
-			GUILayout.BeginVertical();
+        public override void OnInspectorGUI()
+        {
+            GUILayout.BeginVertical();
 
+            this.DrawDefaultInspector();
 
-			this.DrawDefaultInspector();
+            GUILayout.Space(16f);
 
-			GUILayout.Space(16f);
+            EditorGUILayout.LabelField("App/Bundle ID:", PlayerSettings.applicationIdentifier);
 
-			EditorGUILayout.LabelField("App/Bundle ID:", PlayerSettings.applicationIdentifier);
+            if (GUILayout.Button("Set App/Bundle ID"))
+            {
+				#if UNITY_2018_3_OR_NEWER
+					SettingsService.OpenProjectSettings("Project/Player");
+				#else
+            		EditorApplication.ExecuteMenuItem("Edit/Project Settings/Player");
+				#endif
+            }
 
-			if (GUILayout.Button("Set App/Bundle ID"))
-			{
-				EditorApplication.ExecuteMenuItem("Edit/Project Settings/Player");
+            GUILayout.Space(5f);
+            if (GUILayout.Button("Get Editor API Key"))
+            {
+				if (Application.systemLanguage == SystemLanguage.Japanese)
+				{
+	                Application.OpenURL("https://www.xlsoft.com/doc/kudan/ja/development-license-keys_jp/");
+				}
+				else
+				{
+	                Application.OpenURL("https://www.xlsoft.com/doc/kudan/development-license-keys/");
+				}
+            }
+            GUILayout.Space(5f);
+
+            if (GUILayout.Button("Get Support"))
+            {
+				if (Application.systemLanguage == SystemLanguage.Japanese)
+				{
+				    Application.OpenURL("https://www.xlsoft.com/jp/products/kudan/support.html");
+				}
+				else
+				{
+				    Application.OpenURL("https://www.xlsoft.com/en/products/kudan/support.html");					
+				}
 			}
 
-			GUILayout.Space(5f);
-			if (GUILayout.Button("Get Editor API Key"))
-			{
-				Application.OpenURL("https://www.kudan.eu/keys/");
-			}
-			GUILayout.Space(5f);
+            //TrackingMethodBase[] trackers = (TrackingMethodBase[])Resources.FindObjectsOfTypeAll(typeof(TrackingMethodBase));
 
-			if (GUILayout.Button("Get Support"))
-			{
-				Application.OpenURL("https://www.kudan.eu/support/");
-			}
+            //typeof(TrackingMethodMarkerless)
 
-			
-			//TrackingMethodBase[] trackers = (TrackingMethodBase[])Resources.FindObjectsOfTypeAll(typeof(TrackingMethodBase));
-			
-			//typeof(TrackingMethodMarkerless)
+            bool externalOperation = false;
 
-			bool externalOperation = false;
+            GUILayout.EndVertical();
 
-			GUILayout.EndVertical();
-
-			if (externalOperation)
-			{
-				// This has to be here otherwise we get strange GUI stack exceptions
-				EditorGUIUtility.ExitGUI();
-			}			
-		}
-	}
+            if (externalOperation)
+            {
+                // This has to be here otherwise we get strange GUI stack exceptions
+                EditorGUIUtility.ExitGUI();
+            }
+        }
+    }
 }

@@ -11,6 +11,6 @@ public class RotateInfinitey : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(new Vector3(0, 0, 3), Space.Self);
+        transform.Rotate(new Vector3(0, 0, 1.5f), Space.Self);
     }
 }

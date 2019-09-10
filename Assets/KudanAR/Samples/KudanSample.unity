@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -25,6 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -41,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -53,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 4
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -66,13 +67,30 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_DirectLightInLightProbes: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_RuntimeCPUUsage: 25
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -89,7 +107,11 @@ NavMeshSettings:
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &1985796853
 Prefab:
@@ -133,7 +155,7 @@ Prefab:
     - target: {fileID: 114000013630332012, guid: 98407ad24a6034374866d42c91b9bfe7,
         type: 2}
       propertyPath: _APIKey
-      value: sVmoznmKZ+4nFEHD6HoslwpC26PNuBZGHrikUwyon2BKSvza1yu2CqbSrae+pHPr1NHjhsf5pHQOZn8IEqXlqXFodGsrOJhxJANbMOdvnRLUi9/QWGqyRL9FViDmyohw6e5R7U4Ex8H7d7spLLvhfp5HFv56DgLr8c8sC2ipDtv9g1IjOTaY7UGxata3eulG2A/UkIdRv2NcotZXqan01xQUWFAislEwlGguParEYiwu11T4mqtU3dQBbfxpvxbczjdYz493YG3rAO2RHgT+5M5TJShJsz2irkNo71JD2Fzqf4AR2b4+7t1c55zKjegXzGS6Xa/rpNn9yiXUn7rUYIHNvN3cEQa9HsZiVxAV4vJgxFS+T/AxfWqKrEg1uj6xF5MsodZ2EkZ8mqliYIsxZqnFz+Re2HeWG8wvrEob0ZwRIO0TxppAemZc3HChTAPLcNt5gzeBk0oRP4wnrFAFFBDi8XjDocwTSVw++hWZb1qNHzt6bKLsMDRT057UVuuZB6M8f7EOQD79Oah0Vrx/3DUK6e9BEV8oGFNHtk1wyYEkg0i6RLhVSokGx//Qj36A4gCz3h1OjtfB0OuukbNq7xI1L/FcNQLmGYNGZwszARjGr9ESw1gVAkbQMxaV27uo/KoIq4+nR7RL8iT7t7NAaXCFIi24RR+7WGjTvKqWYjA=
+      value: WZrB9tFmFBTfC6xstL99HTUMLV77Oz01Afqn2CFHBXrz9deORP3F7RAdam5M9uiaSa9A4kqKu6kBZJZy61gg/85cl8jOB5tg3RMZMhtF6Z+DsijLR55zlnhbHMdJqqAHSDGvn6ApJgwqIxXmcTe5MaOmRTL8L5E60UfrnqHKTSOveSMSRaelxBs8R+nTQLOjbCfjR9UKR0YYlq5SmwotTJIcCxcb8BWZsMcMUwYxImVE9z68TU2ZaRM6sKCngiSihsI5dcaTxZdycXOCCbtv6J20dhhaEOfou1/Uuhagtxki5Tui0WJIDVZbwGgRKLpMxyyl1YyLfl9/jh/xojqFMdsBcyg4seH5wM0daYlkskfPQHW49uI77SbU14TPOj/UjdJ80veamvT8O1tLNFQVgFHG93roYqkJbAnTuXFekk+SgSlZfVzwMJJAVi+Sq2b2NriteVtz11ltL5RfcCWiOCi9e1DXdIUp2noryyuPfuopdxCYj7BPG13sZ3Yrvnboi09Pc/jkIsWIxSDvfuMWntj8rTcNgQiVks2mEL5/m5aasqScGVqgkzs91GYPDlcUIlOeNHVvxo8lhGxlWRylf6+4mX20toDoKDCtiHilEG8agVgj+C6uknfBoxcHb9wmI0QAY888O/+pNI0Or3CyyKg4cNtGMmvygRZyXvJJi/A=
       objectReference: {fileID: 0}
     - target: {fileID: 114000013630332012, guid: 98407ad24a6034374866d42c91b9bfe7,
         type: 2}
@@ -149,6 +171,11 @@ Prefab:
         type: 2}
       propertyPath: _markerRecoveryMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013630332012, guid: 98407ad24a6034374866d42c91b9bfe7,
+        type: 2}
+      propertyPath: _EditorAPIKey
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98407ad24a6034374866d42c91b9bfe7, type: 2}

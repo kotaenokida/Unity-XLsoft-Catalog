@@ -47,11 +47,11 @@ namespace Kudan.AR.Samples
 		{
 			if (!_kudanTracker.ArbiTrackIsTracking ()) 
 			{
-				//buttonText.text = "Start Markerless Tracking";
+				buttonText.text = "Start Markerless Tracking";
 			} 
 			else 
 			{
-				//buttonText.text = "Stop Markerless Tracking";
+				buttonText.text = "Stop Markerless Tracking";
 			}
 		}
 	}
