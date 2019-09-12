@@ -11,4 +11,6 @@ Long tap the XLsoft logo to find more information on the application.
 3. Build and Run on Android/iOS device
 4. If running on iOS: set `Enable Bitcode: OFF` on XCode
 
+Hello!
+
 The XLsoft Catalog can be found [here](https://www.xlsoft.com/jp/services/catalog.html?v=2019.2).
